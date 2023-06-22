@@ -4,7 +4,7 @@ import { useState } from 'react'
 import useAutoFocus from "./useAutoFocus"
 import ListOfGoals from './ListOfTodos';
 
-const TodoList2 = () => {
+const TodoList = () => {
     const [text, setText] = useState('');
     const [value,setValue]=useState('')
     const [allTodos,setAllTodos]=useState([]);
@@ -97,7 +97,7 @@ const TodoList2 = () => {
     )
 }
 
-export default TodoList2;
+export default TodoList;
 
 
 
