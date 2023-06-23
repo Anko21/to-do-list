@@ -2,16 +2,15 @@ import React from 'react'
 import "./TodoList.css"
 import { useState } from 'react'
 import useAutoFocus from "./useAutoFocus"
-import ListOfGoals from './ListOfTodos';
+import Todos from './Todos';
+import { Button } from '@mui/material';
+import CompletedTodos from './CompletedTodos';
 
 const TodoList = () => {
     const [text, setText] = useState('');
     const [value,setValue]=useState('')
     const [allTodos,setAllTodos]=useState([]);
     const itemInput=useAutoFocus();
-
-    console.log(`newItem:`)
-    console.log(value)
 
     const addTodo=()=>{
         setAllTodos([
@@ -30,7 +29,7 @@ const TodoList = () => {
         addTodo()
         setValue('')
     }
-    console.log(`allTodos=`); console.log(allTodos);
+
     const toggleTodo=(id)=>{
         setAllTodos((currentTodos)=>{
             return currentTodos.map(todo=>{
@@ -68,7 +67,7 @@ const TodoList = () => {
                 name="Title"
                 value={text}
                 onChange={(e)=>{setText(e.target.value)}}/>
-            <div  className='form-row '>
+            <div className='form-row '>
                 <input
                     type='text'
                     id='listItem'
@@ -82,18 +81,31 @@ const TodoList = () => {
                 <button className='btn'type="submit" disabled={!value}>Add</button>
             </div>
         </form>
-        <ListOfGoals
-        allTodos={allTodos}
-        setAllTodos={setAllTodos}
-        toggleTodo={toggleTodo}
-        handleEdit={handleEdit}
-        deleteTodo={deleteTodo}
-        newItem={value}
-        setNewItem={setValue}
-        updateTask={updateTask}
-        />
+        <>
+        {allTodos.filter((allTodo)=>!allTodo.completed).length===0?
+            <p style={{fontSize:"12px",marginTop:'3em'}}>
+            No tasks for today! Have fun !
+            </p>:''}
+            <Todos
+            allTodos={allTodos}
+            toggleTodo={toggleTodo}
+            handleEdit={handleEdit}
+            deleteTodo={deleteTodo}
+            updateTask={updateTask}
+            />
+        </>
+        <>
+        <h1 className='headerCompleted'>Completed tasks</h1>
+        {allTodos.filter((allTodo)=>allTodo.completed).length===0?
+            <p style={{fontSize:"12px",}}>No tasks have been completed! Hurry up!
+            </p>:''}
+            <CompletedTodos
+            allTodos={allTodos}
+            toggleTodo={toggleTodo}
+            deleteTodo={deleteTodo}
+            />
+        </>
     </div>
-
     )
 }
 
