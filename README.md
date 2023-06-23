@@ -1,5 +1,4 @@
-
- <img width="436" alt="1 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/64704a09-adb7-4e82-820e-9c810bc9dd44">
+<img width="436" alt="1 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/64704a09-adb7-4e82-820e-9c810bc9dd44">
 <img width="413" alt="2 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/40e6d5d0-c7fc-4b3f-b13b-289550d79b65">
 <img width="399" alt="3 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/7f4d44ea-192f-4ceb-a1c9-dc5da553d3ac">
 <img width="382" alt="4 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/a4d68697-8ff6-4ebf-83c9-4fd1734c99fa">
