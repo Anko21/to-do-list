@@ -3,49 +3,52 @@ import EditForm from './EditForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import CompletedTodos from './CompletedTodos';
 
 
-function ListOfGoals({allTodos,updateTask, toggleTodo, handleEdit,deleteTodo}){
+//Ongoing tasks
+
+function Todos ({allTodos,updateTask, toggleTodo, handleEdit,deleteTodo}){
     return(
-        <div className='containerCompleted'>
-            <>
-                {/* {allTodos.filter(
-                    (allTodo)=>!allTodo.completed).length===0 ?
-                    <p style={{fontSize:"12px",marginTop:'3em'}}>No tasks for today! Have fun !</p>:''} */}
-                <ul className='list'>
-                {allTodos.map((allTodo)=>{
-                    return(
+    <div div className='todo-list'>
+        {allTodos.map((allTodo)=>{
+            return(
+                <div className='list'>
+                    {!allTodo.edited?
+                    <>
+                    <ul>
                         <li key={allTodo.id}>
-                        {!allTodo.edited?
-                        <>
                             {!allTodo.completed?
                             <>
-                                <label>
-                                    <input
-                                    type="checkbox"
-                                    name="checkbox"
-                                    checked={allTodo.completed}
-                                    onChange={e=>{toggleTodo(allTodo.id,e.target.checked)}}
-                                    />
-                                    <p>{allTodo.task}</p>
-                                    <button className='btn btn-edit' onClick={()=>{handleEdit(allTodo.id)}}><FontAwesomeIcon icon={faPenToSquare}/></button><br/>
-                                    <button className='btn btn-danger' onClick={()=>{deleteTodo(allTodo.id)}}><FontAwesomeIcon icon={faTrash}/></button><br/>
+                                <label className='listlabel'>
+                                    <div className='list-item'>
+                                        <input
+                                        type="checkbox"
+                                        name="checkbox"
+                                        checked={allTodo.completed}
+                                        onChange={e=>{toggleTodo(allTodo.id,e.target.checked)}}
+                                        />
+                                        <p>{allTodo.task}</p>
+                                    </div>
+                                    <div className='btn-group'>
+                                        <button className='btn btn-edit' onClick={()=>{handleEdit(allTodo.id)}}><FontAwesomeIcon icon={faPenToSquare}/></button><br/>
+                                        <button className='btn btn-danger' onClick={()=>{deleteTodo(allTodo.id)}}><FontAwesomeIcon icon={faTrash}/></button><br/>
+                                    </div>
                                 </label>
                             </>:
                             ''}
-                        </>:
-                        <EditForm
-                        allTodo={allTodo}
-                        updateTask={updateTask}
-                        />
-                        }
+
                         </li>
-                    )})}
-                </ul>
-            </>
-      </div>
+                     </ul>
+                    </>:
+                    <EditForm
+                    allTodo={allTodo}
+                    updateTask={updateTask}
+                    />
+                    }
+                 </div>
+            )})}
+    </div>
     );
   }
 
-export default ListOfGoals;
+export default Todos;

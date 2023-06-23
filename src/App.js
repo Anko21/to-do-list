@@ -1,13 +1,13 @@
 import React from 'react'
-import TodoList from "./components/TodoList";
-
+import TodoPage from "./components/TodoPage";
 
 const App = () => {
   return (
     <div>
-        <TodoList/>
+        <TodoPage/>
     </div>
   )
 }
 
 export default App
+
