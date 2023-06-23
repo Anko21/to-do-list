@@ -1,9 +1,9 @@
-<img width="436" alt="1 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/64704a09-adb7-4e82-820e-9c810bc9dd44">
-<img width="413" alt="2 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/40e6d5d0-c7fc-4b3f-b13b-289550d79b65">
-<img width="399" alt="3 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/7f4d44ea-192f-4ceb-a1c9-dc5da553d3ac">
-<img width="382" alt="4 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/a4d68697-8ff6-4ebf-83c9-4fd1734c99fa">
-<img width="380" alt="6 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/2ac9faf6-82f9-45e7-b04e-e4a1e801e981">
-<img width="374" alt="7 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/1529e77c-0065-478d-abf7-be7b2ac83118">
+<img width="342" alt="1 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/1e21d6be-3d1f-4899-883f-40398fc2e18b">
+<img width="342" alt="2 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/46017ed8-bd76-4961-bfc1-a1e8d6b11c76">
+<img width="348" alt="3 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/87c9b83b-8e2e-4a00-ba02-e6d5e9c5f652">
+<img width="343" alt="4 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/24e92ecb-d4db-4b58-80b8-9534d4237ba4">
+<img width="348" alt="6 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/ee2b9ee2-c9b8-4793-bcbf-564822943d63">
+<img width="347" alt="7 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/61c4ae96-d1e3-49b2-85e0-0b0bda6a0206">
 
  #Getting Started with Create React App
 
