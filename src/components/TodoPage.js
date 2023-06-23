@@ -86,7 +86,7 @@ const TodoPage = () => {
         </form>
         <div className='container-todos'>
         {allTodos.filter((allTodo)=>!allTodo.completed).length===0?
-            <p style={{fontSize:"12px",marginTop:'3em'}}>
+            <p style={{fontSize:"14px",marginTop:'3em'}}>
             No tasks for today! Have fun !
             </p>:''}
             <Todos
@@ -100,7 +100,7 @@ const TodoPage = () => {
         <div className='container-completed'>
             <h1 className='headerCompleted'>Completed tasks</h1>
             {allTodos.filter((allTodo)=>allTodo.completed).length===0?
-                <p style={{fontSize:"12px",}}>No tasks have been completed! Hurry up!
+                <p style={{fontSize:"14px",}}>No tasks have been completed! Hurry up!
                 </p>:''}
                 <CompletedTodos
                 allTodos={allTodos}
