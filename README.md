@@ -1,14 +1,20 @@
+Click on this link to check Little Lemon's reservation system !!!!
+https://jolly-jelly-e0e328.netlify.app
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
 
-<<<<<<< HEAD
+
+<img width="431" alt="1 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/b717e4ff-9007-4fd5-8669-01cc68ca4259">
+<img width="416" alt="2 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/a44873e0-0bfe-4e01-b88f-3e4f41c4283b">
+<img width="416" alt="3 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/e4bbfd0f-dcb1-40b2-9585-263aa40dce7d">
+<img width="406" alt="4 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/32dc0b11-372e-429a-b0f5-03e5cc41ad40">
+
+
+
 # Getting Started with Create React App
 =======
 
-<img width="342" alt="1 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/1e21d6be-3d1f-4899-883f-40398fc2e18b">
-<img width="342" alt="2 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/46017ed8-bd76-4961-bfc1-a1e8d6b11c76">
-<img width="348" alt="3 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/87c9b83b-8e2e-4a00-ba02-e6d5e9c5f652">
-<img width="343" alt="4 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/24e92ecb-d4db-4b58-80b8-9534d4237ba4">
-<img width="348" alt="6 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/ee2b9ee2-c9b8-4793-bcbf-564822943d63">
-<img width="347" alt="7 TodoList" src="https://github.com/Anko21/to-do-list/assets/117990932/61c4ae96-d1e3-49b2-85e0-0b0bda6a0206">
+
 
  #Getting Started with Create React App
 >>>>>>> a607e023408ff50a074fc04c2a239a5c564f77de
