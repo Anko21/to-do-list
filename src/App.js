@@ -4,7 +4,7 @@ import TodoPage from "./components/TodoPage";
 const App = () => {
   return (
     <div>
-        <TodoPage/>
+      <TodoPage/>
     </div>
   )
 }

@@ -4,6 +4,8 @@ import { useState } from 'react'
 import useAutoFocus from "./useAutoFocus"
 import Todos from './Todos';
 import CompletedTodos from './CompletedTodos';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckSquare, faFaceSmileBeam} from '@fortawesome/free-solid-svg-icons'
 
 const TodoPage = () => {
     const [text, setText] = useState('');
@@ -60,53 +62,67 @@ const TodoPage = () => {
       ))}
 
     return(
-    <div className='container'>
-        <form  className='new-item-form' onSubmit={submitHandler}>
-            <input
-                type="text"
-                className='title'
-                placeholder='Title'
-                name="Title"
-                value={text}
-                onChange={(e)=>{setText(e.target.value)}}
-                ref={itemInput}
-            />
-            <div className='form-row '>
-                <input
-                type='text'
-                id='listItem'
-                placeholder='List item'
-                name="new Item"
-                className='new-item'
-                value={value}
-                onChange={(e)=>{setValue(e.target.value)}}
-                />
-                <button className='btn'type="submit" disabled={!value}>Add</button>
-            </div>
-        </form>
-        <div className='container-todos'>
-        {allTodos.filter((allTodo)=>!allTodo.completed).length===0?
-            <p style={{fontSize:"14px",marginTop:'3em'}}>
-            No tasks for today! Have fun !
-            </p>:''}
-            <Todos
-            allTodos={allTodos}
-            toggleTodo={toggleTodo}
-            handleEdit={handleEdit}
-            deleteTodo={deleteTodo}
-            updateTask={updateTask}
-            />
+    <div>
+        <div className='navbar'>
+            <FontAwesomeIcon icon={faCheckSquare} className="nav--icon" />
+            <h1 className="nav--logo_text" >My Todo's</h1>
+            <p className="nav--title">
+                {allTodos.filter((allTodo)=>!allTodo.completed).length===0?
+                    <FontAwesomeIcon icon={faFaceSmileBeam} style={{color: "#00aaff", }} size='2xl' className='nav--icon2'/>:
+                    <>
+                    <p>remaining tasks:&nbsp; {allTodos.filter((allTodo)=>!allTodo.completed).length}</p>
+                    </>
+                }
+            </p>
         </div>
-        <div className='container-completed'>
-            <h1 className='headerCompleted'>Completed tasks</h1>
-            {allTodos.filter((allTodo)=>allTodo.completed).length===0?
-                <p style={{fontSize:"14px",}}>No tasks have been completed! Hurry up!
+        <div className='container'>
+            <form  className='new-item-form' onSubmit={submitHandler}>
+                <input
+                    type="text"
+                    className='title'
+                    placeholder='Title'
+                    name="Title"
+                    value={text}
+                    onChange={(e)=>{setText(e.target.value)}}
+                    ref={itemInput}
+                />
+                <div className='form-row '>
+                    <input
+                    type='text'
+                    id='listItem'
+                    placeholder='List item'
+                    name="new Item"
+                    className='new-item'
+                    value={value}
+                    onChange={(e)=>{setValue(e.target.value)}}
+                    />
+                    <button className='btn'type="submit" disabled={!value}>Add</button>
+                </div>
+            </form>
+            <div className='container-todos'>
+            {allTodos.filter((allTodo)=>!allTodo.completed).length===0?
+                <p style={{fontSize:"14px",marginTop:'3em'}}>
+                No tasks for today! Have fun !
                 </p>:''}
-                <CompletedTodos
+                <Todos
                 allTodos={allTodos}
                 toggleTodo={toggleTodo}
+                handleEdit={handleEdit}
                 deleteTodo={deleteTodo}
+                updateTask={updateTask}
                 />
+            </div>
+            <div className='container-completed'>
+                <h1 className='headerCompleted'>Completed tasks</h1>
+                {allTodos.filter((allTodo)=>allTodo.completed).length===0?
+                    <p style={{fontSize:"14px",}}>No tasks have been completed! Hurry up!
+                    </p>:''}
+                    <CompletedTodos
+                    allTodos={allTodos}
+                    toggleTodo={toggleTodo}
+                    deleteTodo={deleteTodo}
+                    />
+            </div>
         </div>
     </div>
     )

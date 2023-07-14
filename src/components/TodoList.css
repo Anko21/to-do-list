@@ -1,15 +1,55 @@
 *{
-    margin:0
+  box-sizing: border-box;
+  margin:0;
+}
+body{
+  font-family: Inter;
+  height:100vh;
+  width:520px;
+  margin:auto;
+  background: #333;
 }
 .container{
-    display:grid;
-    grid-template-rows: auto;
-    background: #333;
+    display:flex;
+    flex-direction: column;
+    background-color: #23252C;
     color: hsl(200, 100%, 90%);
     padding: 1rem;
     margin: 2em auto 2em auto;
-    width: 30vw;
     border:10px solid hsl(200, 100%, 50%);
+    border-radius:  16px;
+}
+.navbar{
+  display:flex;
+  align-items: center;
+  background-color: #23252C;
+  height: 90px;
+  padding:30px 25px
+}
+.nav--logo_text, .nav--title {
+  margin: 0;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color:  hsl(200, 100%, 50%);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #00aaff;
+  background-color: #23252C;
+  font-size: 16px;
+  font-style: italic;
+}
+.nav--icon {
+  color:  hsl(200, 100%, 50%);
+  height: 30px;
+  margin-right: 7px;
+}
+.nav--icon2{
+  border-color:'transparent';
 }
 .new-item-form{
     display: flex;
@@ -17,7 +57,7 @@
 }
   .new-item-form input.title{
     background-color:#333 ;
-    border: 1px solid hsl(200, 100%, 40%);
+    border-bottom: 1px solid hsl(200, 100%, 40%);
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     color: hsl(200, 100%, 90%);
