@@ -1,10 +1,11 @@
 import React from 'react'
-import TodoPage from "./components/TodoPage";
+import './style.css'
+import HomePage from './components/HomePage';
 
 const App = () => {
   return (
     <div>
-      <TodoPage/>
+      <HomePage/>
     </div>
   )
 }

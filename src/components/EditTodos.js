@@ -1,25 +1,19 @@
 import React, { useState } from 'react'
 import useAutoFocus from "./useAutoFocus"
 
-//conditional rendering when edit button is clicked
+//conditional rendering when edit button(pen) is clicked
 
-const EditForm = ({ allTodo,updateTask}) => {
+const EditTodos = ({ allTodo,updateTask}) => {
 
   const[updatedValue,setUpdatedValue]=useState(allTodo.task)
   const itemInput=useAutoFocus();
 
-  console.log(updatedValue)
-  console.log(`allTodos=`); console.log(allTodo)
-
-
-
   const submitHandler=(e)=>{
     e.preventDefault()
     updateTask(updatedValue,allTodo.id)
-}
+  }
 
   return (
-
         <form className='edit-item-form' onSubmit={submitHandler}>
             <div  className='edit-form-row '>
                 <input
@@ -35,6 +29,5 @@ const EditForm = ({ allTodo,updateTask}) => {
                 <button className='btn'type="submit" disabled={!updatedValue}>Update</button>
             </div>
         </form>
-
   )}
-export default EditForm;
+export default EditTodos;
