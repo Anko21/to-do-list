@@ -172,7 +172,7 @@ border-radius: 12px;
 .box{
   display:flex;
   flex-direction: column;
-  color: #701128;
+  color: #5c0256;
   padding: 1rem;
   margin: 4em auto 2em auto;
   border:none;
@@ -248,7 +248,7 @@ border-radius: 12px;
     grid:2;
   }
 .container-todos-p{
-  font-size:16px;
+  font-size:18px;
   margin-top:0.5em;
 }
 .todo-list{
@@ -267,7 +267,7 @@ border-radius: 12px;
 }
 .list li{
   list-style-type: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 .list-item, .list-item-readonly{
   display: flex;
@@ -367,10 +367,10 @@ border-radius: 12px;
   }
   .complete-item p{
     margin-left:0.5em;
-    font-size: 14px;
+    font-size: 16px;
   }
   .headerCompleted{
-    font-size: 18px;
+    font-size: 20px;
     margin:0.5em;
   }
   .list li input {
