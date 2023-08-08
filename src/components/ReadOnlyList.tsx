@@ -1,6 +1,7 @@
 import React from 'react'
+import{ ReadOnlyProps} from './Interfaces'
 
-const ReadOnlyList = (props) => {
+const ReadOnlyList = (props:ReadOnlyProps) => {
   return (
     <>
       <div className='existing-form'>
@@ -10,11 +11,11 @@ const ReadOnlyList = (props) => {
       </div>
       <div className='container-todos'>
         {props.allTodos.filter((allTodo)=>!allTodo.completed).length===0 &&
-          (<p className='container-todos-p's>
+          (<p className='container-todos-p'>
               No tasks for today! Have fun !
           </p>)
         }
-        <div div className='todo-list'>
+        <div className='todo-list'>
         {props.allTodos.map((allTodo)=>{
           return(
             <div className='list' key={allTodo.id}>

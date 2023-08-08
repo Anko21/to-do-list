@@ -3,9 +3,9 @@ import EditList from './EditList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbTack } from '@fortawesome/free-solid-svg-icons'
 import ReadOnlyList from './ReadOnlyList';
+import  {ExistingListProps} from './Interfaces'
 
-
-const ExistingList = (props) => {
+const ExistingList = (props: ExistingListProps) => {
 
 
   return (
@@ -13,7 +13,7 @@ const ExistingList = (props) => {
       <FontAwesomeIcon
         icon={faThumbTack}
         className='pin'
-        ize="xl"
+        size="xl"
       />
       {!props.editMode ?
         <ReadOnlyList

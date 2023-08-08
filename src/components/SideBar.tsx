@@ -1,12 +1,13 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import  {SideBarProps} from './Interfaces'
 
-const SideBar = (props) => {
+const SideBar = (props:SideBarProps) => {
 
 // onClick enters on an editMode and sets the Lists id the same with the tables
 
-const handleClick=(id)=>{
+const handleClick=(id:string)=>{
     props.setTableId(id)
     props.setEditMode(prevMode=>!prevMode)
 }

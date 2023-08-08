@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import CompletedTodos from './CompletedTodos'
 import AddTodos from './AddTodos'
 import useAutoFocus from "./useAutoFocus"
+import  {EditListProps} from './Interfaces'
 
-
-const EditList = (props) => {
+const EditList = (props:EditListProps) => {
 
     const [title,setTitle]=useState(props.title)
     const [value,setValue]=useState('')
@@ -22,7 +22,7 @@ const EditList = (props) => {
             }])
     }
 
-    const submitEditedTodos=(e)=>{
+    const submitEditedTodos=(e:React.FormEvent)=>{
         e.preventDefault()
         addEditTodos()
         setValue('')
@@ -36,7 +36,7 @@ const EditList = (props) => {
 
 
 //Complete todo item/  checkbox
-    const toggleTodo=(id)=>{
+    const toggleTodo=(id:string)=>{
         setEditTodos((currentTodos)=>{
             return currentTodos.map(todo=>{
                 if (todo.id===id){
@@ -48,20 +48,20 @@ const EditList = (props) => {
     }
 
 //Delete Todo item/ delete button
-    const deleteTodo=(id)=>{
+    const deleteTodo=(id:string)=>{
         const newTodos=editTodos.filter(todo=>todo.id!==id)
         setEditTodos(newTodos)
     }
 
 //Edit todo item/  edit buton
-    const handleEdit=(id)=>{
+    const handleEdit=(id:string)=>{
         setEditTodos(editTodos.map(todo=>todo.id===id ?{
             ...todo, edited:!todo.edited
             }: todo
     ))}
 
 //Update edited todo item/ update task buton
-    const updateTask= ( updatedTodo,id)=>{
+    const updateTask= ( updatedTodo:string,id:string)=>{
         setEditTodos(editTodos.map(todo=>todo.id===id ? {
         ...todo,  task:updatedTodo, edited:!todo.edited
         }: todo

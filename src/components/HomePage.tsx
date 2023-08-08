@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import QuoteIntro from './QuoteIntro';
 import MainPage from './MainPage';
 

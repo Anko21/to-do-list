@@ -5,59 +5,63 @@ import { faCheckSquare, faFaceSmileBeam} from '@fortawesome/free-solid-svg-icons
 import List from './List';
 import SideBar from './SideBar'
 import ExistingList from './ExistingList'
+import {TodosProps,ListsProps} from './Interfaces'
 
 const MainPage = () => {
+    const initialState = localStorage.getItem("MyLists")
     const [title, setTitle] = useState('');
-    const [allLists,setAllLists]=useState(() => JSON.parse(localStorage.getItem("MyLists")) || [])
+    const [allLists, setAllLists] = useState<ListsProps[]>(() => JSON.parse(initialState || "[]"))
     const [tableId,setTableId]=useState('')
     const [value,setValue]=useState('')
-    const [allTodos,setAllTodos]=useState([]);
+    const [allTodos,setAllTodos]=useState<TodosProps[]>([]) ;
     const [editMode,setEditMode]=useState(false)
 
+
     const addTodo=()=>{
+      const newTodo:TodosProps={
+        task:value,
+        id:crypto.randomUUID(),
+        edited:false,
+        completed:false
+      }
         setAllTodos([
-            ...allTodos,
-            {
-            task:value,
-            id:crypto.randomUUID(),
-            edited:false,
-            completed:false
-            }])
+            ...allTodos, newTodo])
     }
 
-    const submitNewTodoItem=(e)=>{
+    const submitNewTodoItem=(e: React.FormEvent)=>{
         e.preventDefault()
         addTodo()
         setValue('')
     }
 
     const addNewList=()=>{
-        setAllLists([
-            ...allLists,
-            {
-            title:title,
-            id:crypto.randomUUID(),
-            allTodos:allTodos
-            }
-        ])
+      const newList:ListsProps={
+        title:title,
+        id:crypto.randomUUID(),
+        allTodos:allTodos
+      }
+        setAllLists([...allLists,newList])
         setTableId('')
         setTitle('')
         setValue('')
         setAllTodos([])
     }
 
-    const currentList =
-    allLists.find(list => list.id === tableId) || allLists[0]
+    const currentList:ListsProps | undefined =
+    allLists.find(
+      (list)=> list.id === tableId) || allLists[0]
 
     useEffect(()=>{
+      if (initialState){
         localStorage.setItem('MyLists',JSON.stringify(allLists))
+      }
       },[allLists])
 
 //Compelte todo item/  checkbox
-const toggleTodo=(id)=>{
+const toggleTodo=( id:string,)=>{
     setAllTodos((currentTodos)=>{
         return currentTodos.map(todo=>{
-            if (todo.id===id){
+            if (todo.id  ===id){
             return {...todo, completed:!todo.completed}
             }
             return todo
@@ -66,8 +70,8 @@ const toggleTodo=(id)=>{
 }
 
 //Delete Todo item/ delete button
-const deleteTodo=(id)=>{
-    const newTodos=allTodos.filter(todo=>todo.id!==id)
+const deleteTodo=(id:string)=>{
+    const newTodos=allTodos.filter((todo)=> todo.id!==id)
     setAllTodos(newTodos)
 }
 
@@ -79,7 +83,7 @@ const deleteTodo=(id)=>{
 //     ))}
 
 //Edit todo item/  edit buton
-    function handleEdit(id) {
+    function handleEdit(id:string) {
         setAllTodos((todos)=>{
           let newArray=[]
           for (let i=0; i<todos.length; i++){
@@ -95,15 +99,17 @@ const deleteTodo=(id)=>{
       }
 
 //Update edited todo item/ update task buton
-const updateTask= ( updatedTodo,id)=>{
-    setAllTodos(allTodos.map(todo=>todo.id===id ? {
+const updateTask= ( updatedTodo:string,id:string)=>{
+    setAllTodos((currentTodos)=>{
+      return currentTodos.map(todo=>todo.id===id ? {
       ...todo,  task:updatedTodo, edited:!todo.edited
       }: todo
-  ))}
+    )})
+    }
 
 //Delete List/ delete button
-const deleteList=(id)=>{
-    const newList=allLists.filter(allist=>allist.id!==id)
+const deleteList=(id:string)=>{
+    const newList=allLists.filter((allList)=>allList.id!==id)
     setAllLists(newList)
 }
 
@@ -118,7 +124,7 @@ const deleteList=(id)=>{
 //     }
 
 //Edit an existing List and display it first
-    function updateList(id,updatedTitle,updatedAllTodos) {
+    function updateList(id:string,updatedTitle:string,updatedAllTodos:TodosProps[]) {
         setAllLists((lists)=>{
           let newArray=[]
           for (let i=0; i<lists.length; i++){
@@ -147,10 +153,8 @@ return(
             allLists={allLists}
             setTableId={setTableId}
             deleteList={deleteList}
-            setAllLists={setAllLists}
             editMode={editMode}
             setEditMode={setEditMode}
-            addNewList={addNewList}
             setTitle={setTitle}
             setValue={setValue}
             setAllTodos={setAllTodos}

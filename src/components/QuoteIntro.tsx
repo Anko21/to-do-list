@@ -1,9 +1,7 @@
-import React from 'react'
 import introPic from '../assets/introPic.png'
+import {QuoteIntroProps} from './Interfaces'
 
-
-
-const QuoteIntro = (props) => {
+const QuoteIntro = (props:QuoteIntroProps) => {
 
   return (
     <div className='main'>

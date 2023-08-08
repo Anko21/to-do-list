@@ -1,10 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
-
+import  {CompletedProps} from './Interfaces'
 // Completed Tasks
 
-const CompletedTodos = ({allTodos,toggleTodo,deleteTodo}) => {
+const CompletedTodos = ({allTodos,toggleTodo,deleteTodo}:CompletedProps) => {
   return (
     <div className='container-completed'>
       <h1 className='headerCompleted'>Completed tasks</h1>
@@ -35,7 +35,7 @@ const CompletedTodos = ({allTodos,toggleTodo,deleteTodo}) => {
                       <button className='btn btn-danger'
                         onClick={()=>{deleteTodo(allTodo.id)}}
                       >
-                        <FontAwesomeIcon icon={faTrashCan} size="m" />
+                        <FontAwesomeIcon icon={faTrashCan} size="lg" />
                       </button><br/>
                     </div>
                   </div>

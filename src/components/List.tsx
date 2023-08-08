@@ -4,9 +4,9 @@ import AddTodos from './AddTodos'
 import useAutoFocus from "./useAutoFocus"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbTack } from '@fortawesome/free-solid-svg-icons'
+import  {ListProps} from './Interfaces'
 
-
-const List = (props) => {
+const List = (props: ListProps) => {
     const itemInput=useAutoFocus();
 
     return (
@@ -44,12 +44,12 @@ const List = (props) => {
             </div>
         </form>
         <AddTodos
-            allTodos={props.allTodos}
-            toggleTodo={props.toggleTodo}
-            handleEdit={props.handleEdit}
-            deleteTodo={props.deleteTodo}
-            updateTask={props.updateTask}
-        />
+        allTodos={props.allTodos}
+        toggleTodo={props.toggleTodo}
+        handleEdit={props.handleEdit}
+        deleteTodo={props.deleteTodo}
+        updateTask={props.updateTask}
+      />
         <CompletedTodos
             allTodos={props.allTodos}
             toggleTodo={props.toggleTodo}

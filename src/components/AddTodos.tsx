@@ -1,21 +1,21 @@
-import React from 'react'
 import EditTodos from './EditTodos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faTrashCan} from '@fortawesome/free-solid-svg-icons';
+import  {AddTodosProps} from './Interfaces'
 
 //Ongoing tasks
 
-function AddTodos ({allTodos,updateTask, toggleTodo, handleEdit,deleteTodo}){
+function AddTodos (props:AddTodosProps){
     return(
     <div className='container-todos'>
-        {allTodos.filter((allTodo)=>!allTodo.completed).length===0 &&
-            (<p className='container-todos-p's>
+        {props.allTodos.filter((allTodo)=>!allTodo.completed).length===0 &&
+            (<p className='container-todos-p'>
                 No tasks for today! Have fun !
             </p>)
         }
-        <div div className='todo-list'>
-        {allTodos.map((allTodo)=>{
+        <div className='todo-list'>
+        {props.allTodos.map((allTodo)=>{
             return(
                 <div className='list' key={allTodo.id}>
                     {!allTodo.edited?
@@ -30,20 +30,20 @@ function AddTodos ({allTodos,updateTask, toggleTodo, handleEdit,deleteTodo}){
                                         type="checkbox"
                                         name="checkbox"
                                         checked={allTodo.completed}
-                                        onChange={e=>{toggleTodo(allTodo.id,e.target.checked)}}
+                                        onChange={e=>{props.toggleTodo(allTodo.id,e.target.checked)}}
                                         />
                                         <p>{allTodo.task}</p>
                                     </div>
                                     <div className='btn-group'>
                                         <button className='btn btn-edit'
-                                            onClick={()=>{handleEdit(allTodo.id)}}
+                                            onClick={()=>{props.handleEdit(allTodo.id)}}
                                             >
-                                            <FontAwesomeIcon icon={faPencil} size="m"/>
+                                            <FontAwesomeIcon icon={faPencil} size="lg"/>
                                         </button><br/>
                                         <button className='btn btn-danger'
-                                            onClick={()=>{deleteTodo(allTodo.id)}}
+                                            onClick={()=>{props.deleteTodo(allTodo.id)}}
                                             >
-                                            <FontAwesomeIcon icon={faTrashCan} size="m"  />
+                                            <FontAwesomeIcon icon={faTrashCan} size="lg"  />
                                         </button><br/>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@ function AddTodos ({allTodos,updateTask, toggleTodo, handleEdit,deleteTodo}){
                     ) :
                     <EditTodos
                     allTodo={allTodo}
-                    updateTask={updateTask}
+                    updateTask={props.updateTask}
                     />
                     }
                  </div>

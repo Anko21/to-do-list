@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import useAutoFocus from "./useAutoFocus"
+import  {EditTodosProps} from './Interfaces'
 
 //conditional rendering when edit button(pen) is clicked
 
-const EditTodos = ({ allTodo,updateTask}) => {
+const EditTodos = ({ allTodo,updateTask}:EditTodosProps) => {
 
   const[updatedValue,setUpdatedValue]=useState(allTodo.task)
   const itemInput=useAutoFocus();
 
-  const submitHandler=(e)=>{
+  const submitHandler=(e:React.FormEvent)=>{
     e.preventDefault()
     updateTask(updatedValue,allTodo.id)
   }
