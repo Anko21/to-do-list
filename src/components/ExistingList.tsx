@@ -1,4 +1,3 @@
-import React from 'react'
 import EditList from './EditList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbTack } from '@fortawesome/free-solid-svg-icons'
