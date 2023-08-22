@@ -1,4 +1,4 @@
-Click on this netlify link to check my Planning App : [resplendent-mousse-6e21c6.netlify.app](https://64d2a765f4ccb70959d81ec8--resplendent-mousse-6e21c6.netlify.app/)
+Click on this netlify link to check my Planning App : https://64e500d8c81b2b12f5f57b3a--visionary-macaron-940757.netlify.app/
 
 ![1](https://github.com/Anko21/to-do-list/assets/117990932/3f05736f-edef-4039-a910-b4f646b6e79c)
 ![2](https://github.com/Anko21/to-do-list/assets/117990932/f5dca4cd-3b2d-4eff-964c-a0c5c1400a7b)
