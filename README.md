@@ -1,4 +1,4 @@
-Click on this netlify link to check my Planning App : https://64e50593090393172a2c1dff--benevolent-bienenstitch-915464.netlify.app/
+Click on this netlify link to check my Planning App : https://visionary-macaron-940757.netlify.app
 
 ![1](https://github.com/Anko21/to-do-list/assets/117990932/6eab8580-4f37-43cb-acca-ee5c766435a6)
 ![4](https://github.com/Anko21/to-do-list/assets/117990932/1afb68f7-f61d-4521-aef8-1a4911c40b8e)
