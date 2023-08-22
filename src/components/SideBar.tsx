@@ -22,7 +22,7 @@ const clearList=()=>{
   return (
     <div className='sidebar'>
         <div className='sidebar--title'>
-            <h1>Your lists</h1>
+            <h1>Ready to start?</h1>
             <button className='sidebar-createbtn' onClick={clearList}>+</button>
         </div>
         <div className='sidebar--Notes'>

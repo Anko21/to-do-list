@@ -6,6 +6,7 @@ import List from './List';
 import SideBar from './SideBar'
 import ExistingList from './ExistingList'
 import {TodosProps,ListsProps} from './Interfaces'
+import introPic2 from '../assets/introPic2.png'
 
 const MainPage = () => {
     const initialState = localStorage.getItem("MyLists")
@@ -144,7 +145,8 @@ return(
     <div className='container'>
         <div className='header'>
             <div className='header--div'>
-            <FontAwesomeIcon icon={faCheckSquare} className="header--icon"/>
+            {/* <FontAwesomeIcon icon={faCheckSquare} className="header--icon"/> */}
+            <img src={introPic2} style={{width:"3.5em"}} alt='to do list picture'/>
             <h1 className="header--logo_text" >My Todo's</h1>
             </div>
         </div>

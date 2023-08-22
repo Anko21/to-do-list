@@ -11,11 +11,11 @@ const List = (props: ListProps) => {
 
     return (
     <div className='box'>
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
         icon={faThumbTack}
         className='pin'
         size="xl"
-        />
+        /> */}
         <form  className='new-item-form' onSubmit={props.submitNewTodoItem}>
             <div className='title'>
                 <input
