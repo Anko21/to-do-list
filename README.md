@@ -1,9 +1,11 @@
 Click on this netlify link to check my Planning App : https://64e500d8c81b2b12f5f57b3a--visionary-macaron-940757.netlify.app/
 
-![1](https://github.com/Anko21/to-do-list/assets/117990932/3f05736f-edef-4039-a910-b4f646b6e79c)
-![2](https://github.com/Anko21/to-do-list/assets/117990932/f5dca4cd-3b2d-4eff-964c-a0c5c1400a7b)
-![3](https://github.com/Anko21/to-do-list/assets/117990932/fa5e4e51-b357-412b-92f3-5f885f33b049)
-![4](https://github.com/Anko21/to-do-list/assets/117990932/91f89e90-e6e5-460a-9232-31ccf0bacf9f)
+![1](https://github.com/Anko21/to-do-list/assets/117990932/6eab8580-4f37-43cb-acca-ee5c766435a6)
+![4](https://github.com/Anko21/to-do-list/assets/117990932/1afb68f7-f61d-4521-aef8-1a4911c40b8e)
+![2](https://github.com/Anko21/to-do-list/assets/117990932/396c713b-e1c2-4a83-bd4a-ec13142b3c05)
+![3](https://github.com/Anko21/to-do-list/assets/117990932/a7d70677-2267-4473-94d0-38eebe9b3533)
+![5](https://github.com/Anko21/to-do-list/assets/117990932/01cbe33e-97e7-4af3-aae3-5f511bd8b4f8)
+
 
 
 
